@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan José Brusque — Desenvolvedor Web & Ciência da Computação</title>
+  <meta name="description" content="Site pessoal e portfólio de aprendizado de Alan José Brusque. Graduando em Ciência da Computação (ATITUS) e desenvolvedor.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light';
+      }
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="brand" href="index.html">
+        <span class="brand__full">Alan José Brusque</span>
+        <span class="brand__short">AJB</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-i18n-attr="aria-label:nav.menu">
+        <span class="menu-toggle__lines" aria-hidden="true"><span></span><span></span></span>
+        <span class="menu-toggle__text" data-i18n="nav.menu">Menu</span>
+      </button>
+
+      <nav id="primary-nav" class="nav" data-i18n-attr="aria-label:nav.label">
+        <ul class="nav__list">
+          <li><a class="nav__link nav__link--active" href="index.html" data-i18n="nav.home">Início</a></li>
+          <li><a class="nav__link" href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+          <li><a class="nav__link" href="projetos.html" data-i18n="nav.projects">Projetos</a></li>
+          <li><a class="nav__link" href="#contato" data-i18n="nav.contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="control" type="button" data-lang-toggle aria-label="Mudar para inglês">EN</button>
+        <button class="control control--icon" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar tema escuro">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5"></circle>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path>
+          </svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__lead">
+          <p class="eyebrow" data-i18n="hero.kicker">Ciência da Computação & Web</p>
+          <h1 class="hero__title" id="hero-title">
+            Alan José <span class="hero__accent">Brusque</span>
+          </h1>
+          <p class="hero__tagline" data-i18n="hero.tagline">
+            Graduando em Ciência da Computação pela ATITUS e desenvolvedor. Raciocínio analítico, resolução prática de problemas e foco em fundamentos de software.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="projetos.html" data-i18n="hero.cta.projects">Ver projetos</a>
+            <a class="btn btn--ghost" href="#contato" data-i18n="hero.cta.contact">Falar comigo</a>
+          </div>
+        </div>
+        <aside class="hero__aside" aria-hidden="true">
+          <span class="hero__index" aria-hidden="true"></span>
+          <span class="hero__rule"></span>
+          <span class="hero__note"><span data-i18n="hero.note">Portfólio</span> · <span data-year>2026</span></span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">02</span>
+          <h2 class="section__title" id="sobre-title" data-i18n="home.about.title">Sobre mim</h2>
+        </div>
+        <div class="prose">
+          <p data-i18n="home.about.p1">
+            Graduando em Ciência da Computação pela ATITUS e com capacitação em Empreendedorismo pelo SENAI. Trago mais de 3 anos de experiência prática no setor automotivo (MR Auto Serviços), onde consolidei disciplina, organização e rapidez no diagnóstico de problemas sob pressão.
+          </p>
+          <p data-i18n="home.about.p2">
+            Hoje, uno essa vivência prática e metódica ao estudo da engenharia de software e desenvolvimento web, construindo uma base técnica sólida com código limpo e padrões abertos.
+          </p>
+          <div class="studying">
+            <span class="studying__label" data-i18n="about.studying.label">Estudando agora</span>
+            <span data-i18n="about.studying.items">Ciência da Computação · Lógica & Algoritmos · HTML5 & CSS3 · JavaScript (ES2020+) · Git & GitHub</span>
+          </div>
+          <a class="link-more" href="sobre.html" data-i18n="home.about.more">Ver biografia e trajetória completa →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">03</span>
+          <h2 class="section__title" id="projetos-title" data-i18n="home.projects.title">Projetos em andamento</h2>
+        </div>
+
+        <article class="project project--featured">
+          <span class="project__index" aria-hidden="true">01</span>
+          <div class="project__main">
+            <div style="margin-bottom: var(--space-2);">
+              <span class="badge--status" data-i18n="projects.status.badge">Em andamento</span>
+            </div>
+            <h3 class="project__title" data-i18n="projects.p1.title">Portfólio Pessoal & Web Standards</h3>
+            <p class="project__summary" data-i18n="projects.p1.summary">
+              Construção deste site pessoal e portfólio bilíngue do zero. Foco em HTML semântico, arquitetura de CSS modular com tokens para modo claro/escuro, zero dependências externas e alta performance.
+            </p>
+            <p class="project__learned">
+              <span class="label" data-i18n="projects.learned">Aprendi</span>
+              <span data-i18n="projects.p1.learned">Estruturação semântica, responsividade mobile-first, acessibilidade (WCAG 2.1 AA) e versionamento com Git.</span>
+            </p>
+          </div>
+          <div class="project__meta">
+            <span class="project__stack" data-i18n="projects.p1.stack">HTML5 · CSS3 (Tokens) · JavaScript Vanilla · Git & GitHub Pages</span>
+            <span class="project__links">
+              <a href="https://github.com/alan-xyz007/alan-xyz007.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.view.code">Ver no GitHub ↗</a>
+            </span>
+          </div>
+        </article>
+
+        <article class="project">
+          <span class="project__index" aria-hidden="true">02</span>
+          <div class="project__main">
+            <div style="margin-bottom: var(--space-2);">
+              <span class="badge--status" data-i18n="projects.status.badge">Em andamento</span>
+            </div>
+            <h3 class="project__title" data-i18n="projects.p2.title">Algoritmos & Estruturas de Dados (Laboratório)</h3>
+            <p class="project__summary" data-i18n="projects.p2.summary">
+              Coleção de exercícios práticos e problemas de lógica computacional desenvolvidos durante a graduação na ATITUS, explorando complexidade, recursão e tipos abstratos.
+            </p>
+            <p class="project__learned">
+              <span class="label" data-i18n="projects.learned">Aprendi</span>
+              <span data-i18n="projects.p2.learned">Raciocínio lógico estruturado, modularização, rastreamento de execução e depuração de código.</span>
+            </p>
+          </div>
+          <div class="project__meta">
+            <span class="project__stack" data-i18n="projects.p2.stack">Ciência da Computação · Lógica de Programação · Resolução de Problemas</span>
+            <span class="project__links">
+              <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer" data-i18n="projects.view.progress">Em andamento no GitHub ↗</a>
+            </span>
+          </div>
+        </article>
+
+        <div style="margin-top: var(--space-8);">
+          <a class="link-more" href="projetos.html" data-i18n="home.projects.more">Ver todos os projetos e laboratórios →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__index">04</span>
+          <h2 class="section__title" id="contato-title" data-i18n="contact.title">Contato</h2>
+        </div>
+        <p class="contact__lead" data-i18n="contact.lead">
+          Aberto a conversas sobre oportunidades, desafios em tecnologia, estudos e desenvolvimento de software.
+        </p>
+        <p class="contact__email">
+          <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer">github.com/alan-xyz007</a>
+        </p>
+        <ul class="contact__links">
+          <li>
+            <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span data-year>2026</span> Alan José Brusque</p>
+      <p data-i18n="footer.note">Feito com HTML, CSS e JS · Zero dependências</p>
+      <a class="site-footer__top" href="#top" data-i18n="footer.top">Topo</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
