@@ -3,9 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alan José Brusque — Desenvolvedor Web & Ciência da Computação</title>
-  <meta name="description" content="Site pessoal e portfólio de aprendizado de Alan José Brusque. Graduando em Ciência da Computação (ATITUS) e desenvolvedor.">
+  <title>Alan José Brusque — Mecânica &amp; Computação</title>
+  <meta name="description" content="Portfólio de Alan José Brusque — mais de três anos em mecânica automotiva e graduando em Ciência da Computação na ATITUS.">
   <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://alan-xyz007.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Alan José Brusque">
+  <meta property="og:title" content="Alan José Brusque — Mecânica &amp; Computação">
+  <meta property="og:description" content="Portfólio de Alan José Brusque — mais de três anos em mecânica automotiva e graduando em Ciência da Computação na ATITUS.">
+  <meta property="og:url" content="https://alan-xyz007.github.io/">
+  <meta property="og:image" content="https://alan-xyz007.github.io/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alan José Brusque — Mecânica automotiva e Ciência da Computação">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alan José Brusque — Mecânica &amp; Computação">
+  <meta name="twitter:description" content="Portfólio de Alan José Brusque — mecânica automotiva e Ciência da Computação.">
+  <meta name="twitter:image" content="https://alan-xyz007.github.io/assets/img/og.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://alan-xyz007.github.io/#person",
+          "name": "Alan José Brusque",
+          "url": "https://alan-xyz007.github.io/",
+          "jobTitle": "Mecânico automotivo",
+          "email": "mailto:alanjosebrusque@gmail.com",
+          "worksFor": { "@type": "Organization", "name": "MR Auto Serviços" },
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "ATITUS" },
+          "sameAs": [
+            "https://github.com/alan-xyz007",
+            "https://www.linkedin.com/in/alanj-brusque777707777/"
+          ],
+          "knowsAbout": ["Mecânica automotiva", "Ciência da Computação", "Manutenção de veículos"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://alan-xyz007.github.io/#website",
+          "url": "https://alan-xyz007.github.io/",
+          "name": "Alan José Brusque",
+          "inLanguage": "pt-BR",
+          "author": { "@id": "https://alan-xyz007.github.io/#person" }
+        }
+      ]
+    }
+  </script>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script>
@@ -38,8 +83,7 @@
 
       <nav id="primary-nav" class="nav" data-i18n-attr="aria-label:nav.label">
         <ul class="nav__list">
-          <li><a class="nav__link nav__link--active" href="index.html" data-i18n="nav.home">Início</a></li>
-          <li><a class="nav__link" href="sobre.html" data-i18n="nav.about">Sobre</a></li>
+          <li><a class="nav__link" href="#sobre" data-i18n="nav.about">Sobre</a></li>
           <li><a class="nav__link" href="projetos.html" data-i18n="nav.projects">Projetos</a></li>
           <li><a class="nav__link" href="#contato" data-i18n="nav.contact">Contato</a></li>
         </ul>
@@ -48,11 +92,11 @@
       <div class="controls">
         <button class="control" type="button" data-lang-toggle aria-label="Mudar para inglês">EN</button>
         <button class="control control--icon" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar tema escuro">
-          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
             <circle cx="12" cy="12" r="4.5"></circle>
             <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path>
           </svg>
-          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"></path>
           </svg>
         </button>
@@ -62,105 +106,45 @@
 
   <main id="main">
     <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="stamp" aria-hidden="true">
+        <span data-i18n="stamp.line1">Mecânica</span>
+        <span data-i18n="stamp.line2">Computação</span>
+        <span data-i18n="stamp.line3">Feito à mão</span>
+      </div>
+
       <div class="container hero__grid">
         <div class="hero__lead">
-          <p class="eyebrow" data-i18n="hero.kicker">Ciência da Computação & Web</p>
+          <p class="eyebrow" data-i18n="hero.kicker">Mecânica automotiva · Ciência da Computação</p>
           <h1 class="hero__title" id="hero-title">
             Alan José <span class="hero__accent">Brusque</span>
           </h1>
-          <p class="hero__tagline" data-i18n="hero.tagline">
-            Graduando em Ciência da Computação pela ATITUS e desenvolvedor. Raciocínio analítico, resolução prática de problemas e foco em fundamentos de software.
-          </p>
+          <p class="hero__tagline" data-i18n="hero.tagline">Mais de três anos de experiência automotiva e, agora, graduando em Ciência da Computação na ATITUS — unindo prática e raciocínio analítico.</p>
           <div class="hero__actions">
             <a class="btn btn--solid" href="projetos.html" data-i18n="hero.cta.projects">Ver projetos</a>
             <a class="btn btn--ghost" href="#contato" data-i18n="hero.cta.contact">Falar comigo</a>
           </div>
         </div>
         <aside class="hero__aside" aria-hidden="true">
-          <span class="hero__index" aria-hidden="true"></span>
+          <span class="hero__index"></span>
           <span class="hero__rule"></span>
           <span class="hero__note"><span data-i18n="hero.note">Portfólio</span> · <span data-year>2026</span></span>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="sobre" aria-labelledby="sobre-title">
+    <section class="section section--about" id="sobre" aria-labelledby="sobre-title">
       <div class="container">
         <div class="section__head">
           <span class="section__index">02</span>
-          <h2 class="section__title" id="sobre-title" data-i18n="home.about.title">Sobre mim</h2>
+          <h2 class="section__title" id="sobre-title" data-i18n="about.title">Sobre</h2>
         </div>
         <div class="prose">
-          <p data-i18n="home.about.p1">
-            Graduando em Ciência da Computação pela ATITUS e com capacitação em Empreendedorismo pelo SENAI. Trago mais de 3 anos de experiência prática no setor automotivo (MR Auto Serviços), onde consolidei disciplina, organização e rapidez no diagnóstico de problemas sob pressão.
-          </p>
-          <p data-i18n="home.about.p2">
-            Hoje, uno essa vivência prática e metódica ao estudo da engenharia de software e desenvolvimento web, construindo uma base técnica sólida com código limpo e padrões abertos.
-          </p>
-          <div class="studying">
+          <p data-i18n="about.p1">Profissional dedicado e responsável, com mais de três anos de experiência no setor automotivo. Atuo na MR Auto Serviços com manutenção preventiva e corretiva de veículos, com ênfase em suspensão, substituição de embreagem, troca de óleo e manutenção de sistemas de freios.</p>
+          <p data-i18n="about.p2">Paralelamente à prática na mecânica, curso Ciência da Computação na ATITUS e tenho capacitação em Empreendedorismo pelo SENAI. Resolvo problemas na prática, aprendo rápido e trabalho bem em equipe — e sigo buscando evolução contínua, unindo a vivência técnica à base analítica da computação.</p>
+          <p class="studying">
             <span class="studying__label" data-i18n="about.studying.label">Estudando agora</span>
-            <span data-i18n="about.studying.items">Ciência da Computação · Lógica & Algoritmos · HTML5 & CSS3 · JavaScript (ES2020+) · Git & GitHub</span>
-          </div>
-          <a class="link-more" href="sobre.html" data-i18n="home.about.more">Ver biografia e trajetória completa →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projetos" aria-labelledby="projetos-title">
-      <div class="container">
-        <div class="section__head">
-          <span class="section__index">03</span>
-          <h2 class="section__title" id="projetos-title" data-i18n="home.projects.title">Projetos em andamento</h2>
-        </div>
-
-        <article class="project project--featured">
-          <span class="project__index" aria-hidden="true">01</span>
-          <div class="project__main">
-            <div style="margin-bottom: var(--space-2);">
-              <span class="badge--status" data-i18n="projects.status.badge">Em andamento</span>
-            </div>
-            <h3 class="project__title" data-i18n="projects.p1.title">Portfólio Pessoal & Web Standards</h3>
-            <p class="project__summary" data-i18n="projects.p1.summary">
-              Construção deste site pessoal e portfólio bilíngue do zero. Foco em HTML semântico, arquitetura de CSS modular com tokens para modo claro/escuro, zero dependências externas e alta performance.
-            </p>
-            <p class="project__learned">
-              <span class="label" data-i18n="projects.learned">Aprendi</span>
-              <span data-i18n="projects.p1.learned">Estruturação semântica, responsividade mobile-first, acessibilidade (WCAG 2.1 AA) e versionamento com Git.</span>
-            </p>
-          </div>
-          <div class="project__meta">
-            <span class="project__stack" data-i18n="projects.p1.stack">HTML5 · CSS3 (Tokens) · JavaScript Vanilla · Git & GitHub Pages</span>
-            <span class="project__links">
-              <a href="https://github.com/alan-xyz007/alan-xyz007.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.view.code">Ver no GitHub ↗</a>
-            </span>
-          </div>
-        </article>
-
-        <article class="project">
-          <span class="project__index" aria-hidden="true">02</span>
-          <div class="project__main">
-            <div style="margin-bottom: var(--space-2);">
-              <span class="badge--status" data-i18n="projects.status.badge">Em andamento</span>
-            </div>
-            <h3 class="project__title" data-i18n="projects.p2.title">Algoritmos & Estruturas de Dados (Laboratório)</h3>
-            <p class="project__summary" data-i18n="projects.p2.summary">
-              Coleção de exercícios práticos e problemas de lógica computacional desenvolvidos durante a graduação na ATITUS, explorando complexidade, recursão e tipos abstratos.
-            </p>
-            <p class="project__learned">
-              <span class="label" data-i18n="projects.learned">Aprendi</span>
-              <span data-i18n="projects.p2.learned">Raciocínio lógico estruturado, modularização, rastreamento de execução e depuração de código.</span>
-            </p>
-          </div>
-          <div class="project__meta">
-            <span class="project__stack" data-i18n="projects.p2.stack">Ciência da Computação · Lógica de Programação · Resolução de Problemas</span>
-            <span class="project__links">
-              <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer" data-i18n="projects.view.progress">Em andamento no GitHub ↗</a>
-            </span>
-          </div>
-        </article>
-
-        <div style="margin-top: var(--space-8);">
-          <a class="link-more" href="projetos.html" data-i18n="home.projects.more">Ver todos os projetos e laboratórios →</a>
+            <span data-i18n="about.studying.items">Ciência da Computação (ATITUS) · Empreendedorismo (SENAI) · Manutenção automotiva · Desenvolvimento web</span>
+          </p>
         </div>
       </div>
     </section>
@@ -171,16 +155,22 @@
           <span class="section__index">04</span>
           <h2 class="section__title" id="contato-title" data-i18n="contact.title">Contato</h2>
         </div>
-        <p class="contact__lead" data-i18n="contact.lead">
-          Aberto a conversas sobre oportunidades, desafios em tecnologia, estudos e desenvolvimento de software.
-        </p>
-        <p class="contact__email">
-          <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer">github.com/alan-xyz007</a>
-        </p>
+        <p class="contact__lead" data-i18n="contact.lead">Aberto a conversas sobre mecânica, tecnologia, estudo e novas oportunidades.</p>
+        <a class="contact__email" href="mailto:alanjosebrusque@gmail.com">alanjosebrusque@gmail.com</a>
         <ul class="contact__links">
           <li>
             <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer">
               GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/alanj-brusque777707777/" target="_blank" rel="noopener noreferrer">
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5554992351146" target="_blank" rel="noopener noreferrer">
+              WhatsApp · (54) 99235-1146 <span aria-hidden="true">↗</span>
             </a>
           </li>
         </ul>
@@ -191,7 +181,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <p>© <span data-year>2026</span> Alan José Brusque</p>
-      <p data-i18n="footer.note">Feito com HTML, CSS e JS · Zero dependências</p>
+      <p data-i18n="footer.note">Feito com HTML, CSS e JS</p>
       <a class="site-footer__top" href="#top" data-i18n="footer.top">Topo</a>
     </div>
   </footer>

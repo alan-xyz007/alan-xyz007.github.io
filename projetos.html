@@ -1,13 +1,26 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR" data-theme="light" data-page="projects">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projetos em Andamento — Alan José Brusque</title>
-  <meta name="description" content="Laboratório de estudos e projetos em andamento em computação e desenvolvimento web por Alan José Brusque.">
-  <meta name="i18n-title-key" content="meta.title.projects">
-  <meta name="i18n-desc-key" content="meta.description.projects">
+  <title>Projetos — Alan José Brusque</title>
+  <meta name="description" content="Projetos e experimentos de Alan José Brusque. Oficina aberta: os primeiros projetos estão em construção.">
   <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://alan-xyz007.github.io/projetos.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Alan José Brusque">
+  <meta property="og:title" content="Projetos — Alan José Brusque">
+  <meta property="og:description" content="Projetos e experimentos de Alan José Brusque. Oficina aberta: os primeiros projetos estão em construção.">
+  <meta property="og:url" content="https://alan-xyz007.github.io/projetos.html">
+  <meta property="og:image" content="https://alan-xyz007.github.io/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alan José Brusque — Projetos em construção">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projetos — Alan José Brusque">
+  <meta name="twitter:description" content="Projetos e experimentos de Alan José Brusque. Oficina aberta: os primeiros projetos estão em construção.">
+  <meta name="twitter:image" content="https://alan-xyz007.github.io/assets/img/og.png">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script>
@@ -40,9 +53,8 @@
 
       <nav id="primary-nav" class="nav" data-i18n-attr="aria-label:nav.label">
         <ul class="nav__list">
-          <li><a class="nav__link" href="index.html" data-i18n="nav.home">Início</a></li>
-          <li><a class="nav__link" href="sobre.html" data-i18n="nav.about">Sobre</a></li>
-          <li><a class="nav__link nav__link--active" href="projetos.html" data-i18n="nav.projects">Projetos</a></li>
+          <li><a class="nav__link" href="index.html#sobre" data-i18n="nav.about">Sobre</a></li>
+          <li><a class="nav__link" href="projetos.html" aria-current="page" data-i18n="nav.projects">Projetos</a></li>
           <li><a class="nav__link" href="index.html#contato" data-i18n="nav.contact">Contato</a></li>
         </ul>
       </nav>
@@ -50,11 +62,11 @@
       <div class="controls">
         <button class="control" type="button" data-lang-toggle aria-label="Mudar para inglês">EN</button>
         <button class="control control--icon" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar tema escuro">
-          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
             <circle cx="12" cy="12" r="4.5"></circle>
             <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path>
           </svg>
-          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"></path>
           </svg>
         </button>
@@ -63,113 +75,68 @@
   </header>
 
   <main id="main">
-    <header class="page-header">
+    <section class="page-hero" aria-labelledby="projects-title">
       <div class="container">
-        <p class="eyebrow" data-i18n="projects.hero.kicker">Laboratório de Aprendizado</p>
-        <h1 class="page-header__title" data-i18n="projects.hero.title">Projetos em andamento</h1>
-        <p class="page-header__subtitle" data-i18n="projects.hero.subtitle">
-          Estou no início da minha formação em computação. Cada projeto abaixo representa uma etapa prática de aprendizado, experimentação e consolidação de código.
-        </p>
-      </div>
-    </header>
-
-    <section class="section" aria-labelledby="projetos-title">
-      <div class="container">
-        <div class="section__head">
-          <span class="section__index">01</span>
-          <h2 class="section__title" id="projetos-title" data-i18n="projects.title">Projetos</h2>
+        <p class="eyebrow" data-i18n="projects.kicker">Oficina aberta</p>
+        <h1 class="page-hero__title" id="projects-title" data-i18n="projects.title">Projetos</h1>
+        <p class="page-hero__lead" data-i18n="projects.lead">Ainda não há projetos publicados. Estou construindo os primeiros — e esta página vai mostrar cada etapa, do rascunho ao resultado.</p>
+        <div class="page-hero__meta">
+          <span class="badge badge--live"><span class="badge__dot" aria-hidden="true"></span><span data-i18n="projects.badge">Em construção</span></span>
+          <span class="badge"><span data-i18n="projects.badge.two">0 de 3 publicados</span></span>
         </div>
-
-        <article class="project project--featured">
-          <span class="project__index" aria-hidden="true">01</span>
-          <div class="project__main">
-            <div style="margin-bottom: var(--space-2);">
-              <span class="badge--status" data-i18n="projects.status.badge">Em andamento</span>
-            </div>
-            <h3 class="project__title" data-i18n="projects.p1.title">Portfólio Pessoal & Web Standards</h3>
-            <p class="project__summary" data-i18n="projects.p1.summary">
-              Construção deste site pessoal e portfólio bilíngue do zero. Foco em HTML semântico, arquitetura de CSS modular com tokens para modo claro/escuro, zero dependências externas e alta performance.
-            </p>
-            <p class="project__learned">
-              <span class="label" data-i18n="projects.learned">Aprendi</span>
-              <span data-i18n="projects.p1.learned">Estruturação semântica, responsividade mobile-first, acessibilidade (WCAG 2.1 AA) e versionamento com Git.</span>
-            </p>
-          </div>
-          <div class="project__meta">
-            <span class="project__stack" data-i18n="projects.p1.stack">HTML5 · CSS3 (Tokens) · JavaScript Vanilla · Git & GitHub Pages</span>
-            <span class="project__links">
-              <a href="https://github.com/alan-xyz007/alan-xyz007.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.view.code">Ver no GitHub ↗</a>
-            </span>
-          </div>
-        </article>
-
-        <article class="project">
-          <span class="project__index" aria-hidden="true">02</span>
-          <div class="project__main">
-            <div style="margin-bottom: var(--space-2);">
-              <span class="badge--status" data-i18n="projects.status.badge">Em andamento</span>
-            </div>
-            <h3 class="project__title" data-i18n="projects.p2.title">Algoritmos & Estruturas de Dados (Laboratório)</h3>
-            <p class="project__summary" data-i18n="projects.p2.summary">
-              Coleção de exercícios práticos e problemas de lógica computacional desenvolvidos durante a graduação na ATITUS, explorando complexidade, recursão e tipos abstratos.
-            </p>
-            <p class="project__learned">
-              <span class="label" data-i18n="projects.learned">Aprendi</span>
-              <span data-i18n="projects.p2.learned">Raciocínio lógico estruturado, modularização, rastreamento de execução e depuração de código.</span>
-            </p>
-          </div>
-          <div class="project__meta">
-            <span class="project__stack" data-i18n="projects.p2.stack">Ciência da Computação · Lógica de Programação · Resolução de Problemas</span>
-            <span class="project__links">
-              <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer" data-i18n="projects.view.progress">Em andamento no GitHub ↗</a>
-            </span>
-          </div>
-        </article>
-
-        <article class="project">
-          <span class="project__index" aria-hidden="true">03</span>
-          <div class="project__main">
-            <div style="margin-bottom: var(--space-2);">
-              <span class="badge--status" data-i18n="projects.status.badge">Em andamento</span>
-            </div>
-            <h3 class="project__title" data-i18n="projects.p3.title">Laboratório Front-end & JavaScript Vanilla</h3>
-            <p class="project__summary" data-i18n="projects.p3.summary">
-              Estudos práticos sobre a Web API nativa, manipulando o DOM, eventos do navegador e persistência com LocalStorage sem o uso de bibliotecas externas.
-            </p>
-            <p class="project__learned">
-              <span class="label" data-i18n="projects.learned">Aprendi</span>
-              <span data-i18n="projects.p3.learned">Manipulação nativa de DOM, ciclo de eventos assíncronos, persistência de preferências de usuário e boas práticas de código limpo.</span>
-            </p>
-          </div>
-          <div class="project__meta">
-            <span class="project__stack" data-i18n="projects.p3.stack">JavaScript ES2020+ · DOM API · Web APIs</span>
-            <span class="project__links">
-              <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer" data-i18n="projects.view.progress">Em andamento no GitHub ↗</a>
-            </span>
-          </div>
-        </article>
       </div>
     </section>
 
-    <section class="section section--contact" id="contato" aria-labelledby="contato-title">
+    <section class="section" aria-label="Projetos" data-i18n-attr="aria-label:projects.section.label">
       <div class="container">
-        <div class="section__head">
-          <span class="section__index">02</span>
-          <h2 class="section__title" id="contato-title" data-i18n="contact.title">Contato</h2>
+        <div class="tabs">
+          <div class="tabs__list" role="tablist" aria-label="Filtrar projetos" data-i18n-attr="aria-label:projects.tabs.label">
+            <span class="tabs__indicator" aria-hidden="true"></span>
+            <button class="tab" type="button" role="tab" id="tab-wip" aria-selected="true" aria-controls="panel-wip" data-i18n="projects.tab.wip">Em andamento</button>
+            <button class="tab" type="button" role="tab" id="tab-done" aria-selected="false" aria-controls="panel-done" tabindex="-1" data-i18n="projects.tab.done">Concluídos</button>
+          </div>
         </div>
-        <p class="contact__lead" data-i18n="contact.lead">
-          Aberto a conversas sobre oportunidades, desafios em tecnologia, estudos e desenvolvimento de software.
-        </p>
-        <p class="contact__email">
-          <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer">github.com/alan-xyz007</a>
-        </p>
-        <ul class="contact__links">
-          <li>
-            <a href="https://github.com/alan-xyz007" target="_blank" rel="noopener noreferrer">
-              GitHub <span aria-hidden="true">↗</span>
-            </a>
-          </li>
-        </ul>
+
+        <div class="panel" id="panel-wip" role="tabpanel" aria-labelledby="tab-wip">
+          <div class="board">
+            <article class="slot">
+              <span class="tape" aria-hidden="true"></span>
+              <span class="slot__number" aria-hidden="true">01</span>
+              <h2 class="slot__title" data-i18n="projects.slot1.title">Vaga 01 — reservada</h2>
+              <p class="slot__desc" data-i18n="projects.slot1.desc">O primeiro projeto entra aqui. Enquanto isso, o estudo continua.</p>
+              <span class="slot__status" data-i18n="projects.slot.status">Em aberto</span>
+            </article>
+            <article class="slot">
+              <span class="slot__number" aria-hidden="true">02</span>
+              <h2 class="slot__title" data-i18n="projects.slot2.title">Vaga 02 — reservada</h2>
+              <p class="slot__desc" data-i18n="projects.slot2.desc">Espaço guardado para o próximo experimento.</p>
+              <span class="slot__status" data-i18n="projects.slot.status">Em aberto</span>
+            </article>
+            <article class="slot">
+              <span class="slot__number" aria-hidden="true">03</span>
+              <h2 class="slot__title" data-i18n="projects.slot3.title">Vaga 03 — reservada</h2>
+              <p class="slot__desc" data-i18n="projects.slot3.desc">Toda oficina começa vazia. Esta não vai ficar.</p>
+              <span class="slot__status" data-i18n="projects.slot.status">Em aberto</span>
+            </article>
+          </div>
+
+          <div class="progress">
+            <div class="progress__label">
+              <span data-i18n="projects.board.title">Quadro de obras</span>
+              <span data-i18n="projects.badge.two">0 de 3 publicados</span>
+            </div>
+            <div class="progress__track" role="img" aria-label="Obra em andamento" data-i18n-attr="aria-label:projects.board.aria">
+              <div class="progress__bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-done" role="tabpanel" aria-labelledby="tab-done" hidden>
+          <div class="empty">
+            <span class="empty__stamp" data-i18n="projects.empty.stamp">Nada por aqui ainda</span>
+            <p data-i18n="projects.empty.text">Quando um projeto ficar pronto, ele aparece nesta aba — com código, resultado e o que aprendi no caminho.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -177,8 +144,8 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <p>© <span data-year>2026</span> Alan José Brusque</p>
-      <p data-i18n="footer.note">Feito com HTML, CSS e JS · Zero dependências</p>
-      <a class="site-footer__top" href="#top" data-i18n="footer.top">Topo</a>
+      <p data-i18n="footer.note">Feito com HTML, CSS e JS</p>
+      <a class="site-footer__top" href="index.html" data-i18n="footer.back">Voltar ao início</a>
     </div>
   </footer>
 

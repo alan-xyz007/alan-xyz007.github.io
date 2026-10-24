@@ -45,22 +45,24 @@ O site é **criativo e colorido**, com paleta controlada. Cor é usada com **fun
 Tudo por **CSS custom properties**. Nenhum valor de cor/espaço/raio solto.
 
 ```
+--paper, --paper-2, --paper-3, --ink, --ink-soft, --line
+--terracotta, --teal, --olive, --mustard, --pink (+ variantes --*-ink para texto)
 --color-bg, --color-surface, --color-surface-2, --color-text, --color-muted,
 --color-border, --color-accent, --color-accent-contrast
---font-sans (system-ui), --font-display (Georgia serif, só no destaque do hero)
+--font-sans (system-ui), --font-display (Georgia serif, só em destaque)
 --text-xs/sm/base/lg/xl/2xl/3xl/4xl/5xl
 --space-1..--space-16 (base 4px)
---radius-sm/md/lg, --shadow-sm/md
---container (1120px), --measure (66ch)
+--radius-sm/md/rough, --shadow-hard/hard-sm
+--container (1120px), --measure (66ch), --grain (data URI)
 ```
 
-- **Cores:** paleta quente-clara (`#FCFBF8`) + 4 acentos: **índigo `#4F46E5`** (principal), **laranja `#EA580C`** (projetos), **esmeralda `#047857`** (contato/estudo), **rosa `#DB2777`** (gradiente). **Nenhuma cor fora dos tokens.**
-- **Acento por seção:** `--section-accent` define a cor do numeral/tint da seção. Sobre = índigo, Projetos = laranja, Contato = esmeralda.
-- **Gradiente da marca:** `--gradient-brand` (índigo → rosa → laranja) só na palavra do hero, na bolinha do "Portfólio", no numeral d'água e na régua do rodapé. `--gradient-cta` (tons escuros) apenas no botão primário.
-- **Tipografia:** sans do sistema em todo o corpo; serif (`Georgia`) apenas em **uma** palavra/frase de destaque do hero. Sem download de fonte.
-- **Grid:** 12 colunas, gutter 24px, container 1120px, padding 20px (mobile) / 40px (desktop). Use assimetria em 5/7, 7/5 e 4/8.
-- **Bordas e réguas:** linhas de 1px são parte da linguagem visual (divisórias entre seções e itens de lista).
-- **Sombra:** quase inexistente; elevação sutil só em hover de card e no CTA.
+- **Cores:** papel kraft (`#F3E9DA`) + tinta (`#1B1815`) + 5 acentos rústicos: **terracota `#C2410C`** (principal), **verde-teal `#0F766E`** (contato/estudo), **oliva `#3F6212`** (aberto/estudo), **mostarda `#854D0E`** (construção), **vinho `#9F1239`** (destaque). Texto usa as variantes `--*-ink` para garantir contraste. **Nenhuma cor fora dos tokens.**
+- **Acento por seção:** `--section-accent` no numeral circular. Sobre = terracota, Contato = teal; Projetos usa `--slot-accent` por card (terracota, teal, oliva).
+- **Textura:** grão SVG em `body::after` (leve, `multiply` no claro / `overlay` no escuro) + papel como base. Sem imagens externas.
+- **Bordas e sombra:** contorno de 2px na tinta e **sombra dura** (`6px 6px 0`), sem blur. É a assinatura visual: nada de sombra difusa.
+- **Tipografia:** sans do sistema; serif itálica só em destaque (nome no hero, numerais das vagas). Títulos em caixa alta com tracking negativo.
+- **Grid:** 12 colunas, gutter 24px, container 1120px, padding 20px (mobile) / 40px (desktop). Assimetria 7/5 no hero.
+- **Movimento:** transições de 120–280ms; abas com indicador deslizante; press com deslocamento da sombra. Respeitar `prefers-reduced-motion`.
 
 ## 5. Tema claro/escuro
 

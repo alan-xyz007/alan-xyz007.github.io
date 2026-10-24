@@ -1,5 +1,5 @@
 /* ==========================================================================
-   main.js — tema, menu e ano
+   main.js — tema, menu, ano e abas de projetos
    ========================================================================== */
 (function () {
   'use strict';
@@ -80,6 +80,65 @@
 
     window.addEventListener('resize', function () {
       if (window.innerWidth >= 768) closeMenu();
+    });
+  }
+
+  /* abas de projetos ------------------------------------------------------- */
+  var tabsList = document.querySelector('.tabs__list');
+
+  if (tabsList) {
+    var tabs = Array.prototype.slice.call(tabsList.querySelectorAll('[role="tab"]'));
+    var indicator = tabsList.querySelector('.tabs__indicator');
+
+    function moveIndicator(tab) {
+      if (!indicator || !tab) return;
+      indicator.style.width = tab.offsetWidth + 'px';
+      indicator.style.transform = 'translateX(' + (tab.offsetLeft - 6) + 'px)';
+    }
+
+    function selectTab(tab, shouldFocus) {
+      tabs.forEach(function (item) {
+        var selected = item === tab;
+        item.setAttribute('aria-selected', selected ? 'true' : 'false');
+        item.setAttribute('tabindex', selected ? '0' : '-1');
+        var panel = document.getElementById(item.getAttribute('aria-controls'));
+        if (panel) panel.hidden = !selected;
+      });
+      moveIndicator(tab);
+      if (shouldFocus) tab.focus();
+    }
+
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener('click', function () {
+        selectTab(tab, false);
+      });
+
+      tab.addEventListener('keydown', function (event) {
+        var next = null;
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = tabs[(index + 1) % tabs.length];
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = tabs[(index - 1 + tabs.length) % tabs.length];
+        if (event.key === 'Home') next = tabs[0];
+        if (event.key === 'End') next = tabs[tabs.length - 1];
+        if (next) {
+          event.preventDefault();
+          selectTab(next, true);
+        }
+      });
+    });
+
+    var initialTab = tabsList.querySelector('[aria-selected="true"]') || tabs[0];
+    selectTab(initialTab, false);
+
+    window.addEventListener('resize', function () {
+      moveIndicator(tabsList.querySelector('[aria-selected="true"]'));
+    });
+
+    document.addEventListener('langchange', function () {
+      moveIndicator(tabsList.querySelector('[aria-selected="true"]'));
+    });
+
+    window.addEventListener('load', function () {
+      moveIndicator(tabsList.querySelector('[aria-selected="true"]'));
     });
   }
 })();

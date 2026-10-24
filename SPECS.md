@@ -274,12 +274,17 @@ Regra: nada inventado. Sem dado real → `TODO:` e pedir ao Alan.
 | 23/10/2026 | Sobre preenchido com a bio real do LinkedIn | Conteúdo fornecido pelo Alan |
 | 23/10/2026 | Posicionamento: mecânica automotiva + Ciência da Computação | Trajetória real informada |
 | 23/10/2026 | Sem domínio próprio na v1 | Escopo definido |
+| 23/10/2026 | Direção visual "oficina": papel kraft, tinta, carimbo, sombra dura | Pedido do Alan: "colorido, criativo, rústico, personalidade forte" |
+| 23/10/2026 | Projetos em página própria (`projetos.html`) com estado "em construção" | Sem projetos reais ainda; evitar cards fictícios |
+| 23/10/2026 | Abas "Em andamento / Concluídos" com indicador animado | Pedido de animação ao selecionar |
+| 23/10/2026 | `sobre.html` aposentada; Sobre é seção da home | Evitar página órfã duplicada e i18n quebrado |
+| 23/10/2026 | E-mail e WhatsApp reais no contato | Dados fornecidos pelo Alan |
+| 23/10/2026 | Site publicado em `https://alan-xyz007.github.io` | Pedido do Alan |
 
 ## 21. Riscos e pendências
 
-1. **Repo privado** bloqueia o Pages → precisa virar público.
-2. **`SPEC.md` do quiz no mesmo repo** seria publicado como texto → mover antes da P3.
-3. **Conteúdo dependente do Alan:** projetos, e-mail e WhatsApp.
-4. **Número do WhatsApp** é dado pessoal: só publicar com confirmação.
-5. **Divergência nos textos de origem:** "mais de 3 anos" × "há mais de dois anos" — confirmar o número final.
-6. **Inglês sem URL própria** limita SEO internacional (aceito na v1).
+1. **`SPEC.md` do quiz no mesmo repo** é publicado como texto — mover para fora do repo quando o quiz for tratado.
+2. **Histórico do git** contém `SPEC.md` e a versão antiga de `sobre.html` — irrelevante para o site, mas visível no GitHub.
+3. **Projetos ainda vazios:** as 3 vagas são placeholders honestos; substituir quando houver projeto real.
+4. **Divergência nos textos de origem:** "mais de 3 anos" × "há mais de dois anos" — site usa "mais de três anos"; confirmar.
+5. **Inglês sem URL própria** limita SEO internacional (aceito na v1).
